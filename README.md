@@ -11,7 +11,7 @@ The showing and hiding of the 2 different elements (Survey and Thank you) after 
 I searched the internet and found this on stack overflow, 
 I did change the id names to apply to my code:
 
-
+/*
 if (document.getElementById('survey')) {
         if (document.getElementById('survey').style.display == 'none') {
             document.getElementById('survey').style.display = 'block';
@@ -22,7 +22,7 @@ if (document.getElementById('survey')) {
             document.getElementById('afterSubmit').style.display = 'block';
         }
     }
-    
+   */
 
 It worked but I didn't fully understand it. After reading it over and over I think it means:
 
