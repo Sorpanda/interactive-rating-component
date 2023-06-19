@@ -1,0 +1,137 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-clr: hsl(25, 97%, 53%);
+
+    --neutral-white-100: hsl(0, 0%, 100%);
+    --neutral-light-grey-200: hsl(217, 12%, 63%);
+    --neutral-medium-grey-400: hsla(216, 12%, 54%, 0.1);
+    --neutral-dark-blue-600: hsl(213, 19%, 18%);
+    --neutral-dark-blue-800: hsl(216, 12%, 8%);
+
+    --ff-Overpass: 'Overpass', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+body{
+    background-color: var(--neutral-dark-blue-800);
+    color: var(--neutral-light-grey-200);
+    font-size: 1.5rem;
+    font-family: var(--ff-Overpass);
+    font-weight: var(--fw-400);
+
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+article {
+    background-color: var(--neutral-dark-blue-600);
+    background: linear-gradient(var(--neutral-dark-blue-600), var(--neutral-medium-grey-400));
+    max-width: 320px;
+    border-radius: 1em;
+}
+
+h1{
+    padding: 1em;
+    color: var(--neutral-white-100);
+    font-size: 2.6rem;
+}
+
+p{
+    padding: 0 1.5em;
+    line-height: 1.5em;
+}
+
+.star-icon{
+    border-radius: 50%;
+    background-color: var(--neutral-medium-grey-400);
+    padding: .7em;
+    margin-top: 1em;
+    margin-left: 1em;
+   
+}
+
+.rating-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin:1em;
+}
+
+.rating{
+    border-radius: 50%;
+    border: none;
+    padding: 1em;
+    aspect-ratio: 1 / 1;
+    color: var(--neutral-light-grey-200);
+    background-color: var(--neutral-medium-grey-400);
+    font-weight: var(--fw-700);
+}
+
+.rating:hover{
+    background-color: var(--neutral-light-grey-200);
+    color: var(--neutral-white-100);
+}
+
+.rating:focus{
+    background-color: var(--primary-clr);
+    color: var(--neutral-white-100);
+}
+
+.submit-btn{
+    color: var(--neutral-white-100);
+    background-color: var(--primary-clr);
+    border: none;
+    border-radius: 100px;
+    width: 85%;
+    padding: 1em 2em;
+    margin: 2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.submit-btn:hover{
+    background-color: hsl(25, 97%, 43%);
+    cursor: pointer;
+}
+
+.submit-btn:focus{
+    background-color: var(--neutral-white-100);
+    color: var(--primary-clr);
+}
+
+#afterSubmit{
+    display: none;
+   padding: 2em 1em;
+   text-align: center;
+}
+
+.after-submit__rating{
+    color: var(--primary-clr);
+    background-color: var(--neutral-medium-grey-400);
+    border-radius: 100px;
+    width: 60%;
+    margin: 1em auto;
+    padding: .5em 0;
+    text-align: center;
+}
+.attribution { 
+    font-size: 1.5rem; 
+    text-align: center;
+    margin-top: 2em;
+ }
+.attribution a {
+    color: var(--primary-clr);
+ }
