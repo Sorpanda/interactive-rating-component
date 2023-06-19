@@ -12,7 +12,9 @@ I searched the internet and found this on stack overflow,
 I did change the id names to apply to my code:
 
 /*
-if (document.getElementById('survey')) {
+
+        if (document.getElementById('survey')) {
+
         if (document.getElementById('survey').style.display == 'none') {
             document.getElementById('survey').style.display = 'block';
             document.getElementById('afterSubmit').style.display = 'none';
