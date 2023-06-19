@@ -25,12 +25,8 @@ document.getElementById("rating5").onclick = function() {
 }
 
 function switchVisible() {
-    if (document.getElementById('survey').style.display == 'none') {   
-        }
-        else {
             document.getElementById('survey').style.display = 'none';
             document.getElementById('afterSubmit').style.display = 'block';
-        }
     }
    
 
